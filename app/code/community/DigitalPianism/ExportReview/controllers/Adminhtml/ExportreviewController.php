@@ -6,6 +6,22 @@
  */
 class DigitalPianism_ExportReview_Adminhtml_ExportreviewController extends Mage_Adminhtml_Controller_Action
 {
+    /**
+     * @return mixed
+     */
+    protected function _isAllowed()
+    {
+        $action = strtolower($this->getRequest()->getActionName());
+        switch ($action) {
+            case 'pending':
+                return Mage::getSingleton('admin/session')->isAllowed('catalog/reviews_ratings/reviews/pending');
+                break;
+            default:
+                return Mage::getSingleton('admin/session')->isAllowed('catalog/reviews_ratings/reviews/all');
+                break;
+        }
+    }
+
     public function massCsvExportAction()
     {
         $reviewIds = $this->getRequest()->getParam('reviews');
