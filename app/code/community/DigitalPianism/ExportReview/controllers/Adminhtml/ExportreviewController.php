@@ -2,9 +2,9 @@
 /**
  * Controller to add the CSV and XML export to the review grid
  *
- * Class DigitalPianism_ExportReview_Adminhtml_IndexController
+ * Class DigitalPianism_ExportReview_Adminhtml_ExportreviewController
  */
-class DigitalPianism_ExportReview_Adminhtml_IndexController extends Mage_Adminhtml_Controller_Action
+class DigitalPianism_ExportReview_Adminhtml_ExportreviewController extends Mage_Adminhtml_Controller_Action
 {
     public function massCsvExportAction()
     {

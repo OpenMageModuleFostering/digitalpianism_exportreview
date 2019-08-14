@@ -11,12 +11,12 @@ class DigitalPianism_ExportReview_Model_Observer
         {
             $block->addItem('exportreviewcsv', array(
                 'label' => 'Export to CSV',
-                'url' => $block->getUrl('exportreview/adminhtml_index/massCsvExport')
+                'url' => $block->getUrl('adminhtml/exportreview/massCsvExport')
             ));
 
             $block->addItem('exportreviewwml', array(
                 'label' => 'Export to XML',
-                'url' => $block->getUrl('exportreview/adminhtml_index/massXmlExport')
+                'url' => $block->getUrl('adminhtml/exportreview/massXmlExport')
             ));
         }
     }

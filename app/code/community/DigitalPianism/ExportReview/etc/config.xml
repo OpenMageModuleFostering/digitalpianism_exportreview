@@ -3,7 +3,7 @@
  
     <modules>
 		<DigitalPianism_ExportReview>
-			<version>0.1.0</version>
+			<version>0.1.1</version>
 		</DigitalPianism_ExportReview>
     </modules>
 	
@@ -17,13 +17,13 @@
  
     <admin>
         <routers>
-            <exportreview>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>DigitalPianism_ExportReview</module>
-                    <frontName>exportreview</frontName>
+                    <modules>
+                        <DigitalPianism_ExportReview before="Mage_Adminhtml">DigitalPianism_ExportReview_Adminhtml</DigitalPianism_ExportReview>
+                    </modules>
                 </args>
-            </exportreview>
+            </adminhtml>
         </routers>
     </admin>
 
