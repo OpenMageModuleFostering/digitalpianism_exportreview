@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/DigitalPianism_ExportReview",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Export Reviews to CSV/Excel for Magento.",
+    "authors": [
+    {
+        "name": "Digital Pianism",
+        "email": "raphael.petrini@free.fr"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
