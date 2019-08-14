@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>DigitalPianism_ExportReview</name>
-    <version>0.0.3</version>
+    <version>0.1.0</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Export Reviews to CSV/Excel for Magento.</summary>
     <description>This extension allows users to export customer reviews in both CSV / Excel types.</description>
-    <notes>- PHPDoc for classes</notes>
+    <notes>- Use of event observer instead of block rewrites</notes>
     <authors><author><name>Digital Pianism</name><user>raphaelpetrini</user><email>raphael.petrini@free.fr</email></author></authors>
-    <date>2014-12-19</date>
-    <time>11:32:08</time>
-    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ExportReview"><dir name="Block"><dir name="Review"><file name="Grid.php" hash="4ccfc2e6270ca92fbe4d927445c26940"/></dir></dir><dir name="controllers"><dir name="Catalog"><dir name="Product"><file name="ReviewController.php" hash="19ba923296d4d8a1f516c7335a6edc02"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="12dddc22447c83cb91b288a42dbc7cf8"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ExportReview.xml" hash="4f5f0512a60878f5d25ffd2d12da2265"/></dir></target></contents>
+    <date>2015-07-28</date>
+    <time>11:30:12</time>
+    <contents><target name="magecommunity"><dir name="DigitalPianism"><dir name="ExportReview"><dir name="Model"><file name="Observer.php" hash="5371cf51d3e154983b57d1f01f245114"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="3b0bb10df0e031c6c2b111eb20886c2d"/></dir></dir><dir name="etc"><file name="config.xml" hash="b5befb9099167aa2a5877a31188af146"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DigitalPianism_ExportReview.xml" hash="4f5f0512a60878f5d25ffd2d12da2265"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>4.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
