@@ -5,6 +5,9 @@ Controller to add the CSV and XML export for the reviews */
 
 include_once("Mage/Adminhtml/controllers/Catalog/Product/ReviewController.php");
 
+/**
+ * Class DigitalPianism_ExportReview_Catalog_Product_ReviewController
+ */
 class DigitalPianism_ExportReview_Catalog_Product_ReviewController extends Mage_Adminhtml_Catalog_Product_ReviewController
 {	
 	 /**

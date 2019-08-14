@@ -3,8 +3,15 @@
 Grid to add the export button 
 */
 
+/**
+ * Class DigitalPianism_ExportReview_Block_Review_Grid
+ */
 class DigitalPianism_ExportReview_Block_Review_Grid extends Mage_Adminhtml_Block_Review_Grid
 {
+    /**
+     * @return $this
+     * @throws Exception
+     */
     protected function _prepareColumns()
     {
 	
